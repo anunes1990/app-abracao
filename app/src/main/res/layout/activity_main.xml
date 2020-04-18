@@ -35,5 +35,20 @@
             android:text="@{lastname}"
             tools:text="txtNome" />
 
+        <EditText
+            android:id="@+id/inpName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/btnTeste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="teste"
+            android:text="Teste" />
+
     </LinearLayout>
 </layout>
