@@ -1,5 +1,6 @@
 package com.allisson.appabracao.ui.listaongs
 
+import android.content.Context
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import androidx.fragment.app.FragmentPagerAdapter
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,7 +18,6 @@ import com.allisson.appabracao.adapter.OngsAdpater
 import kotlinx.android.synthetic.main.lista_ongs_fragment.*
 
 class ListaOngsFragment : Fragment() {
-
     companion object {
         fun newInstance() = ListaOngsFragment()
     }
@@ -36,16 +37,19 @@ class ListaOngsFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(ListaOngsViewModel::class.java)
-
         viewManager = LinearLayoutManager(activity)
-        viewAdapter = OngsAdpater(viewModel.ongs)
 
         rvOngs.apply {
             setHasFixedSize(true)
             layoutManager = viewManager
-            adapter = viewAdapter
         }
 
+        viewModel.ongs.observe(viewLifecycleOwner, Observer {
+            viewModel.ongs.value?.let {
+                viewAdapter = OngsAdpater(it, activity as Context)
+                rvOngs.adapter = viewAdapter
+            }
+        })
+        viewModel.getOngs();
     }
-
 }

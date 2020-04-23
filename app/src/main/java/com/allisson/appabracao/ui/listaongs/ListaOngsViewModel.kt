@@ -1,12 +1,14 @@
 package com.allisson.appabracao.ui.listaongs
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.allisson.appabracao.models.Ong
 
 class ListaOngsViewModel : ViewModel() {
-    var ongs: MutableList<Ong> = ArrayList();
+    //var ongs: MutableList<Ong> = ArrayList();
+    var ongs: MutableLiveData<List<Ong>> = MutableLiveData<List<Ong>>();
 
-    init {
+    fun getOngs(){
 
         val ong1 = Ong(
             "Ong TESTE 1",
@@ -28,8 +30,11 @@ class ListaOngsViewModel : ViewModel() {
             "ong2.com.br"
         )
 
-        ongs.add(ong1)
-        ongs.add(ong2)
+        val tempOngs: MutableList<Ong> = ArrayList();
+        tempOngs.add(ong1)
+        tempOngs.add(ong2)
+
+        ongs.value = tempOngs;
     }
 
 }

@@ -1,5 +1,7 @@
 package com.allisson.appabracao.models
 
+import java.io.Serializable
+
 data class Ong(
     val nome: String,
     val endereco: String,
@@ -8,4 +10,4 @@ data class Ong(
     val telefone: String,
     val email: String,
     val site: String
-)
+): Serializable
