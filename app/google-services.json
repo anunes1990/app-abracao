@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "121177307937",
+    "firebase_url": "https://app-aracao.firebaseio.com",
+    "project_id": "app-aracao",
+    "storage_bucket": "app-aracao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121177307937:android:588603b60ca199de8a5c60",
+        "android_client_info": {
+          "package_name": "com.allisson.appabracao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121177307937-neg4t9nmand3fr8fkqkvu7naoisfevv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3HqU6INAzM538zBPI9NNfW-cwW_akLiI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121177307937-neg4t9nmand3fr8fkqkvu7naoisfevv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

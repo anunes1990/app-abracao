@@ -3,9 +3,10 @@ package com.allisson.appabracao.models
 import java.io.Serializable
 
 data class Ong(
+    val id: String,
     val nome: String,
     val endereco: String,
-    val qtqPessoas: Int,
+    val qtdPessoas: Int,
     val foto: String,
     val telefone: String,
     val email: String,
