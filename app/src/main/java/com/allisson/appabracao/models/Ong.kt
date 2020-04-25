@@ -6,7 +6,7 @@ data class Ong(
     val id: String,
     val nome: String,
     val endereco: String,
-    val qtdPessoas: Int,
+    val qtdPessoas: String,
     val foto: String,
     val telefone: String,
     val email: String,

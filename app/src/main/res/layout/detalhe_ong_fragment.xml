@@ -14,23 +14,68 @@
         tools:context=".ui.detalheong.DetalheOngFragment">
         <LinearLayout
             android:id="@+id/message"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@{viewModel.ong.nome}"
+                android:textAlignment="center"
                 android:textSize="25sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                tools:text="txtNome" />
+
+            <ImageView
+                android:id="@+id/urlOng"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:imageUrl="@{viewModel.ong.foto}" />
+
             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.ong.endereco}"
+                android:textAlignment="center"
                 android:textSize="20sp"
+                tools:text="txtEndereco" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.ong.telefone}"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:text="txtTelefone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@{viewModel.ong.email}"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:text="txtEmail" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.ong.site}"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:text="txtSite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{viewModel.ong.qtdPessoas}"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:text="txtPessoas" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

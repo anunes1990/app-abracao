@@ -17,7 +17,7 @@ class ListaOngsViewModel : ViewModel() {
                     ong.id,
                     ong.data["nome"].toString(),
                     ong.data["endereco"].toString(),
-                    ong.data["qtdPessoas"].toString().toInt(),
+                    ong.data["qtdPessoas"].toString(),
                     ong.data["foto"].toString(),
                     ong.data["telefone"].toString(),
                     ong.data["email"].toString(),

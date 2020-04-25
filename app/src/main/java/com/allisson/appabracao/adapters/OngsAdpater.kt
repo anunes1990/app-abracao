@@ -1,4 +1,4 @@
-package com.allisson.appabracao.adapter
+package com.allisson.appabracao.adapters
 
 import android.annotation.SuppressLint
 import android.content.Context
