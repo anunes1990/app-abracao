@@ -1,19 +1,15 @@
 package com.allisson.appabracao.ui.detalheong
 
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.allisson.appabracao.R
 import com.allisson.appabracao.databinding.DetalheOngFragmentBinding
 import com.allisson.appabracao.models.Ong
-import com.squareup.picasso.Picasso
 
 class DetalheOngFragment : Fragment() {
 
