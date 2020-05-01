@@ -12,6 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.allisson.appabracao.ListaOngs
 import com.allisson.appabracao.R
+import com.allisson.appabracao.Usuario
 import com.allisson.appabracao.databinding.LoginFragmentBinding
 
 class LoginFragment : Fragment() {
@@ -35,6 +36,10 @@ class LoginFragment : Fragment() {
         val binding: LoginFragmentBinding = DataBindingUtil.setContentView(activity!!, R.layout.login_fragment)
         binding.viewModel = viewModel
 
+        binding.btnSingup.setOnClickListener {
+            activity!!.finish()
+            startActivity(Intent(context, Usuario::class.java))
+        }
 
         binding.btnLogin.setOnClickListener {
             if (binding.txtEmail.text.isEmpty() || binding.txtSenha.text.isEmpty()) {
