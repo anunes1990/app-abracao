@@ -13,7 +13,7 @@ class SplashActivity : AppCompatActivity() {
             override fun run() {
                 try {
                     sleep(5000)
-                    val intent = Intent(baseContext, ListaOngs::class.java)
+                    val intent = Intent(baseContext, Login::class.java)
                     startActivity(intent)
                     finish()
                 } catch (e:Exception) {

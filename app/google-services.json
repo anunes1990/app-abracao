@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "121177307937-ncjvhpp25amq6k0cms109v6qdar3sm9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.allisson.appabracao",
+            "certificate_hash": "33ce31c42f0eb8b56b4380c4a8dda25655b363a3"
+          }
+        },
+        {
           "client_id": "121177307937-neg4t9nmand3fr8fkqkvu7naoisfevv3.apps.googleusercontent.com",
           "client_type": 3
         }
